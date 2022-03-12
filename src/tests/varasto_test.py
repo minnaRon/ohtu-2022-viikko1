@@ -80,4 +80,3 @@ class TestVarasto(unittest.TestCase):
         #f"saldo = {self.saldo}, vielä tilaa {self.paljonko_mahtuu()}"
         self.assertAlmostEqual(str(self.varasto),"saldo = 0, vielä tilaa 10")
 
-#muutos tehtävän 11 mergelle
