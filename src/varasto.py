@@ -19,7 +19,7 @@ class Varasto:
             # täyteen ja ylimäärä hukkaan!
             saldo = tilavuus
         return saldo
-    print("tarkistetaan että github actionsin pylint toimii..........................................................")
+
     # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
         return self.tilavuus - self.saldo
