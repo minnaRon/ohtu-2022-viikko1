@@ -1,11 +1,51 @@
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
         if tilavuus > 0.0:
-            self.tilavuus = tilavuus
+            #toinen pylint TÄÄLLÄ vv
+            #############
+            if tilavuus != -1:
+                if tilavuus != -1:
+            ############
+                    self.tilavuus = tilavuus
         else:
             # virheellinen, nollataan
             self.tilavuus = 0.0
-        
+            #################################
+            #kolmasvvv
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            print(self.tilavuus)
+            #####################################
+
         if alku_saldo < 0.0:
             # virheellinen, nollataan
             self.saldo = 0.0
@@ -15,7 +55,7 @@ class Varasto:
         else:
             # täyteen ja ylimäärä hukkaan!
             self.saldo = tilavuus
-
+        print("pylint virhe 110 merkkiä ylittyy.........................................................................................")
     # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
         return self.tilavuus - self.saldo
